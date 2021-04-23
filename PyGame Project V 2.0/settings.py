@@ -26,7 +26,7 @@ GRIDHEIGHT = HEIGHT / TILESIZE
 Wall_Img = 'tile32.png'
 
 # Player Settings
-PLAYER_SPEED = 500
+PLAYER_SPEED = 475
 PLAYER_ROT_SPEED = 250
 PLAYER_IMG = 'Second Option.png'
 PLAYER_HIT_RECT = pg.Rect(0, 0, 35, 35)

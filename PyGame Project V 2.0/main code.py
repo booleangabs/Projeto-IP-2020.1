@@ -28,7 +28,7 @@ class Game:
         self.player_img = pg.image.load(path.join(img_folder, PLAYER_IMG)).convert_alpha()
         self.wall_img = pg.image.load(path.join(img_folder, Wall_Img)).convert_alpha()
         self.wall_img = pg.transform.scale(self.wall_img, (TILESIZE, TILESIZE))
-
+        
     def new(self):
         # initialize all variables and do all the setup for a new game
         self.all_sprites = pg.sprite.Group()

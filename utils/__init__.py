@@ -1,1 +1,0 @@
-# This folder contains the classes and functions used to build the game
