@@ -3,7 +3,7 @@
 ### Instruções
 1. Instale as dependências:
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 2. Rodando o projeto(algum dos três deve funcionar):
 ```
