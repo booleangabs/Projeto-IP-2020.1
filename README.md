@@ -5,7 +5,11 @@
 ```
 pip install -r requirements.txt
 ```
-2. Rodando o projeto(algum dos três deve funcionar):
+2. Vá ao diretório 'main':
+```
+cd main
+```
+3. Rodando o projeto(um dos três deve funcionar):
 ```
 python run.py
 python3 run.py
