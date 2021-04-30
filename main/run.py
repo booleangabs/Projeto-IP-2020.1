@@ -14,12 +14,11 @@ from map_tile import TiledMap, Map, Camera, load_occupation_map
 
 def video():
     '''
-    introduction video
+    Cutscene
     '''
     pg.display.set_caption('O monitorado')
     clip = VideoFileClip('projeto.mp4')
     clip.preview()
-
 
 class Game:
     '''
