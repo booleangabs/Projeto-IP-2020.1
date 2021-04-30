@@ -9,7 +9,6 @@ class MenuSet:
         pg.init()
         self.running = True
         self.UP_KEY, self.DOWN_KEY, self.START_KEY, self.BACK_KEY = False, False, False, False
-        self.LT_KEY, self.RT_KEY = False, False
         self.DISPLAY_W, self.DISPLAY_H = window['WIDTH'], window['HEIGHT']
         self.display = pg.Surface((self.DISPLAY_W, self.DISPLAY_H))
         self.window = pg.display.set_mode(((self.DISPLAY_W, self.DISPLAY_H)))
@@ -31,10 +30,6 @@ class MenuSet:
                     self.DOWN_KEY = True
                 if event.key == pg.K_UP:
                     self.UP_KEY = True
-                if event.key == pg.K_LEFT:
-                    self.LT_KEY = True
-                if event.key == pg.K_RIGHT:
-                    self.RT_KEY = True
 
     def reset_keys(self):
         self.UP_KEY, self.DOWN_KEY, self.START_KEY, self.BACK_KEY = False, False, False, False
