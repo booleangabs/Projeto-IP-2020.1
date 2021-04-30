@@ -157,15 +157,6 @@ class Game:
         avlcScore, calcScore, mdScore, partialScore = self.player.score.values()
         avlcCount, calcCount, mdCount = self.player.count.values()
         self.elapsed = time() - self.t0
-        '''
-        string = f"  Faltam {(self.maxTime - self.elapsed) / 6:.1f} horas |" \
-                 f" Nota: {partialScore:.2f}({self.player.scrollCount}) |" \
-                 f" Álgebra Linear: {avlcScore:.2f}({avlcCount}) |" \
-                 f" Matemática Discreta: {mdScore:.2f}({mdCount}) |" \
-                 f" Cálculo: {calcScore:.2f}({calcCount})  "
-        text = self.font.render(string, 1, colors['BLACK'], colors['WHITE'])
-        self.screen.blit(text, (int((self.screen.get_width() - text.get_width()) // 2), text.get_height()))
-        '''
         barColor = (130, 130, 130)
 
         # calc
@@ -295,7 +286,7 @@ class Game:
 
 
 if __name__ == '__main__':
-    video()
+    # video()
     g = Game()
     g.show_start_screen()
     g.new()

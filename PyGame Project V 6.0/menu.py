@@ -3,6 +3,7 @@ import run
 from settings import window, colors
 g = run.Game()
 
+
 class MenuSet:
     def __init__(self):
         pg.init()
@@ -14,7 +15,6 @@ class MenuSet:
         self.window = pg.display.set_mode(((self.DISPLAY_W, self.DISPLAY_H)))
         self.font_name = pg.font.get_default_font()
         self.main_menu = MainMenu(self)
-        # self.volume = Volume(self)
         self.curr_menu = self.main_menu
 
     def check_events(self):
@@ -31,6 +31,10 @@ class MenuSet:
                     self.DOWN_KEY = True
                 if event.key == pg.K_UP:
                     self.UP_KEY = True
+                if event.key == pg.K_LEFT:
+                    self.LT_KEY = True
+                if event.key == pg.K_RIGHT:
+                    self.RT_KEY = True
 
     def reset_keys(self):
         self.UP_KEY, self.DOWN_KEY, self.START_KEY, self.BACK_KEY = False, False, False, False
